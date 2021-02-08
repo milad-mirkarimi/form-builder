@@ -27,7 +27,7 @@
             class="dragArea list-group"
             :list="list1"
             :group="{ name: 'people', pull: 'clone', put: false }"
-            :clone="cloneDog"
+            :clone="buildFormElement"
             @change="log"
           >
             <FormElement
@@ -86,7 +86,7 @@ export default {
     log: function (evt) {
       window.console.log(evt);
     },
-    cloneDog({ text, type }) {
+    buildFormElement({ text, type }) {
       return {
         id: idGlobal++,
         text,
