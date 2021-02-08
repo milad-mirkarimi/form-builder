@@ -1,0 +1,226 @@
+// GENERAL
+
+*{
+    box-sizing: border-box;
+}
+
+body,
+html,
+#app,
+#home{
+    height: 100%;
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    color: $corporate-blue;
+    line-height: 25px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.bg-grey{
+    background-color: $light-grey;
+}
+
+.box-shadow{
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 30px;
+}
+
+.disc-list{
+    list-style-type: disc;
+    padding-left: 40px;
+
+    li{
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+
+form{
+    max-width: 500px;
+}
+
+.divider{
+    border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.push-down{
+    top: 48px !important;
+    position: relative;
+}
+
+@media screen and (min-width: $small) {
+    .push-down {
+        top: 28px !important;
+    }
+}
+
+// TYPOGRAPHY
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: $base-spacing;
+    font-family: $heading-font-family;
+    font-weight: 600;
+    color: $corporate-blue;
+    width: 100%;
+    line-height: 30px;
+    letter-spacing: -.15px;
+}
+
+h1,
+.h1 {
+    font-size: $h1-font-size;
+    line-height: 55px;
+}
+
+h2,
+.h2 {
+    font-size: $h2-font-size;
+}
+
+h3,
+.h3 {
+    font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+    font-size: $h4-font-size;
+}
+
+h5,
+.h5 {
+    font-size: $h5-font-size;
+}
+
+p{
+    margin-bottom: $para-base-spacing;
+}
+
+a {
+    color: $corporate-blue;
+    
+    &:hover {
+        color: $digital-blue;
+        text-decoration: none;
+    }
+}
+
+.text-max-width{
+    max-width: 525px;
+}
+
+.para-max-width{
+    max-width: 760px;
+    margin: auto;
+}
+
+.text-small{
+    font-size: $small-font-size;
+}
+
+.huge-text{
+    font-family: $heading-font-family;
+    font-size: $huge-font-size;
+    color: $digital-blue;
+}
+
+.error{
+    color: $error-red;
+    font-size: $small-font-size;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+}
+
+@media(max-width: $xsmall){
+    .huge-text{
+        font-size: $h1-font-size;
+    }
+}
+
+// BUTTONS
+
+.btn{
+    border-radius: 25px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-login{
+    color: white;
+    background-color: $corporate-blue;
+    border-color: $corporate-blue;
+
+    &:hover{
+        color: $corporate-blue;
+        background-color: white;
+        border-color: $corporate-blue;
+    }
+}
+
+.btn-secondary{
+    color: $digital-blue;
+    background-color: white;
+    border-color: $digital-blue;
+    transition: .3s;
+
+    &:hover{
+        color: white;
+        background-color: $digital-blue;
+        border-color: $digital-blue;
+    }
+}
+
+.btn-primary{
+    color: white;
+    background-color: $digital-blue;
+    border-color: $digital-blue;
+    transition: .3s;
+    cursor: move !important;
+
+    &:hover{
+        color: white;
+        background-color: $digital-blue;
+        border-color: $digital-blue;
+    }
+
+    &:active{
+        color: white;
+        background-color: $digital-blue;
+        border-color: $digital-blue;
+    }
+
+    &:focus{
+        color: white;
+        background-color: $digital-blue;
+        border-color: $digital-blue;
+    }
+}
+
+[draggable="true"] {
+    /*
+   To prevent user selecting inside the drag source
+  */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    opacity: 1;
+    transform: rotate(2deg);
+}
+
+
+
+

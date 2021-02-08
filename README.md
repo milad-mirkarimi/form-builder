@@ -1,4 +1,4 @@
-# drag
+# daily-info-v2
 
 ## Project setup
 ```

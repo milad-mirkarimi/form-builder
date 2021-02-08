@@ -1,0 +1,49 @@
+// INHERITANCE PROPERTIES
+%controls-shared {
+  border: 1px solid rgba(2, 0, 185, 0.3);
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+%focus-shared {
+  border: 1px solid $digital-blue;
+}
+
+%error-shared {
+  border: 1px solid $error-red;
+}
+
+.control {
+  width: 100%;
+
+  input {
+    height: 44px;
+    @extend %controls-shared;
+
+    &:focus {
+      @extend %focus-shared;
+    }
+  }
+
+  textarea {
+    @extend %controls-shared;
+
+    &:focus {
+      @extend %focus-shared;
+    }
+  }
+}
+
+.error-control {
+  input {
+    @extend %error-shared;
+  }
+
+  textarea {
+    @extend %error-shared;
+  }
+}
